@@ -22,7 +22,7 @@ echo "====================================="
 echo "WebHelp plugin"
 echo "====================================="
 unzip oxygen-webhelp.zip >/dev/null
-
+ls -la .
 
 mkdir dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug
 cp -R Customization dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/Customization
