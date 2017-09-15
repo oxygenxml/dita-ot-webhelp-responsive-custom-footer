@@ -44,7 +44,7 @@ echo "====================================="
 export ANT_OPTS=-Xmx1524m
 sh dita-ot-2.5.3/bin/dita -i sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
 
-# cp gh-pages/index.html publishing/index.html
+ cp gh-pages/index.html publishing/index.html
 echo "====================================="
 echo "List output file"
 echo "====================================="
