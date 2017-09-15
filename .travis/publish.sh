@@ -17,6 +17,9 @@ unzip dita-ot-2.5.3.zip >/dev/null
 echo "===================================================="
 echo "Download WebHelp plugin"
 echo "===================================================="
+mkdir webhelp-plugin
+chdir webhelp-plugin
+
 wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
 echo "====================================="
 echo "WebHelp plugin"
