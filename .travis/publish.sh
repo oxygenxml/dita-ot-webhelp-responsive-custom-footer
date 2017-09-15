@@ -13,11 +13,17 @@ echo "====================================="
 echo "extract DITA-OT"
 echo "====================================="
 unzip dita-ot-2.5.3.zip >/dev/null
-ls -la .
 
 echo "===================================================="
-echo "Copy PDF customization plugin to DITA-OT/plugins"
+echo "Download WebHelp plugin"
 echo "===================================================="
+wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
+echo "====================================="
+echo "WebHelp plugin"
+echo "====================================="
+unzip oxygen-webhelp.zip >/dev/null
+
+
 mkdir dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug
 cp -R Customization dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/Customization
 cp -R fonts dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/fonts
