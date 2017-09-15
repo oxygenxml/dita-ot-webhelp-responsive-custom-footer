@@ -40,12 +40,7 @@ echo "Transform the sample to WebHelp Responsive"
 echo "====================================="
 
 export ANT_OPTS=-Xmx1524m
-sh dita-ot-2.4/bin/dita -i oXygen-ug/DITA/UserManual.ditamap -f oxy-ug-pdf --filter=oXygen-ug/DITA/ditaval/editor.ditaval -output=publishing/oXygen-ug/editor -Doxy-ug-distribution=editor
-
-echo "====================================="
-echo "Transform the oXygen user manual to PDF, author distribution"
-echo "====================================="
-sh dita-ot-2.4/bin/dita -i sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
+sh dita-ot-2.5.3/bin/dita -i sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
 
 # cp gh-pages/index.html publishing/index.html
 echo "====================================="
