@@ -36,7 +36,7 @@ echo "====================================="
 sh dita-ot-2.5.3/bin/dita --install
 
 echo "====================================="
-echo "Transform the oXygen user manual to PDF, editor distribution"
+echo "Transform the sample to WebHelp Responsive"
 echo "====================================="
 
 export ANT_OPTS=-Xmx1524m
@@ -45,16 +45,11 @@ sh dita-ot-2.4/bin/dita -i oXygen-ug/DITA/UserManual.ditamap -f oxy-ug-pdf --fil
 echo "====================================="
 echo "Transform the oXygen user manual to PDF, author distribution"
 echo "====================================="
-sh dita-ot-2.4/bin/dita -i oXygen-ug/DITA/UserManual.ditamap -f oxy-ug-pdf --filter=oXygen-ug/DITA/ditaval/author.ditaval -output=publishing/oXygen-ug/author -Doxy-ug-distribution=author
+sh dita-ot-2.4/bin/dita -i sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
 
-echo "====================================="
-echo "Transform the oXygen user manual to PDF, developer distribution"
-echo "====================================="
-sh dita-ot-2.4/bin/dita -i oXygen-ug/DITA/UserManual.ditamap -f oxy-ug-pdf --filter=oXygen-ug/DITA/ditaval/developer.ditaval -output=publishing/oXygen-ug/developer -Doxy-ug-distribution=developer
-
-cp gh-pages/index.html publishing/index.html
+# cp gh-pages/index.html publishing/index.html
 echo "====================================="
 echo "List output file"
 echo "====================================="
 ls -la publishing
-ls -la publishing/oXygen-ug/editor
+ls -la publishing/it-book
