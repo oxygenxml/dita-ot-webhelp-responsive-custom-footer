@@ -27,21 +27,13 @@ cp -R com.oxygenxml.* ../dita-ot-2.5.3/plugins
 echo "===================================================="
 echo "List DITA-OT plugins"
 echo "===================================================="
-
-
 chdir ..
 ls -la dita-ot-2.5.3/plugins/
 
 echo "====================================="
 echo "integrate plugins"
 echo "====================================="
-sh dita-ot-2.4/bin/dita --install
-
-echo "======================================="
-echo "Checkout oXygen User Manual"
-echo "======================================="
-git clone https://github.com/oxygenxml/userguide.git oXygen-ug
-ls -la oXygen-ug/DITA/
+sh dita-ot-2.5.3/bin/dita --install
 
 echo "====================================="
 echo "Transform the oXygen user manual to PDF, editor distribution"
