@@ -19,25 +19,18 @@ echo "Download WebHelp plugin"
 echo "===================================================="
 mkdir webhelp-plugin
 chdir webhelp-plugin
-
 wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
-echo "====================================="
-echo "WebHelp plugin"
-echo "====================================="
 unzip oxygen-webhelp.zip >/dev/null
 ls -la .
+cp -R com.oxygenxml.* ../dita-ot-2.5.3/plugins
 
-mkdir dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug
-cp -R Customization dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/Customization
-cp -R fonts dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/fonts
-cp -R lib dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/lib
-cp build.xml dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/build.xml
-cp fop.xconf dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/fop.xconf
-cp integrator.xml dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/integrator.xml
-cp plugin.xml dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/plugin.xml
-cp pdf2ExtensionParameters.xml dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug/pdf2ExtensionParameters.xml
+echo "===================================================="
+echo "List DITA-OT plugins"
+echo "===================================================="
 
-ls -la dita-ot-2.4/plugins/com.oxygenxml.pdf2.ug
+
+chdir ..
+ls -la dita-ot-2.5.3/plugins/
 
 echo "====================================="
 echo "integrate plugins"
