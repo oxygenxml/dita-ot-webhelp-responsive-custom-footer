@@ -13,6 +13,7 @@ echo "====================================="
 echo "extract DITA-OT"
 echo "====================================="
 unzip dita-ot-2.5.3.zip >/dev/null
+ls -la .
 
 echo "===================================================="
 echo "Copy PDF customization plugin to DITA-OT/plugins"
