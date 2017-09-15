@@ -27,7 +27,6 @@
                 </xsl:when>
             </xsl:choose>
             
-            
             <xsl:if test="exists($toc/*:topicmeta/*:bookrights/*:bookowner/*:organization)">
                 <span class="organization">
                     <xsl:text> </xsl:text><xsl:value-of select="$toc/*:topicmeta/*:bookrights/*:bookowner/*:organization"/>
