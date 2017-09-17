@@ -18,9 +18,9 @@ git config user.email "support@oxygenxml.com"
 
 git remote add upstream "https://$WH_GH_TOKEN@github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer.git"
 git fetch upstream
-git reset upstream/publish
+git reset upstream/gh-pages
 
 git add -A .
 git status
 git commit -m "rebuild pages at ${rev}"
-git push -q upstream HEAD:publish
+git push -q upstream HEAD:gh-pages
