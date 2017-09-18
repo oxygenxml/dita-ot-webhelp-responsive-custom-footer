@@ -10,7 +10,7 @@ ls -la .
 echo "====================================="
 echo "download DITA-OT 2.5.3"
 echo "====================================="
-wget https://github.com/dita-ot/dita-ot/releases/download/2.5.3/dita-ot-2.5.3.zip
+wget https://github.com/dita-ot/dita-ot/releases/download/2.5.3/dita-ot-2.5.3.zip  >/dev/null
 
 echo "====================================="
 echo "extract DITA-OT"
@@ -51,7 +51,7 @@ echo "Transform the sample to WebHelp Responsive output"
 echo "====================================="
 
 export ANT_OPTS=-Xmx1524m
-sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
+sh dita-ot-2.5.3/bin/dita -i -v resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book
 
 cp resources/gh-pages/index.html publishing/index.html
 echo "====================================="
