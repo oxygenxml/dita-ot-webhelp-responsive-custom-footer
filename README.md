@@ -19,7 +19,7 @@ To use this WebHelp Responsive customization plugin, use one of the following me
 2. Download the ZIP archive associated with this project by using the ``Clone or download`` button.
 3. Install the plugin by running the command ``dita-ot-dir/bin/dita --install=plug-in-zip``. See more details in the [Installing plug-ins](http://www.dita-ot.org/2.5/dev_ref/plugins-installing.html) topic from the DITA-OT documentation.
 4. Invoke the WebHelp Responsive transformation as in the following example:
-TODO: Review the command
+
 ```
 sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book -v -Dwebhelp.footer.add.generation.time=yes
 ```
