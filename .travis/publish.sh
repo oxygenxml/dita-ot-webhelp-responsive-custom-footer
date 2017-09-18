@@ -4,6 +4,9 @@ echo "Publish $TRAVIS_BRANCH !"
 
 java -version
 
+echo "Root folder"
+ls -la .
+
 echo "====================================="
 echo "download DITA-OT 2.5.3"
 echo "====================================="
