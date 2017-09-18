@@ -33,8 +33,8 @@ chdir ..
 echo "===================================================="
 echo "Copy extension plugin"
 echo "===================================================="
-mkdir dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
-cp * dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+# mkdir dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+# cp * dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
 
 echo "===================================================="
 echo "List DITA-OT plugins"
