@@ -26,6 +26,6 @@ TODO: Review the command
     dita.bat -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -f oxy-ug-pdf -output=D:/workspace/userguide-private/DITA/out-pdf --filter=D:/workspace/userguide-private/DITA/author.ditaval -Doxy-ug-distribution=author
 ```
 
-This sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.2.
+This customization sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.2.
 
 This project is licensed under the Apache License 2.0. For details, see the [LICENSE](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/LICENSE) file at the top of this repository.
