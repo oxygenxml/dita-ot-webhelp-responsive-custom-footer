@@ -34,7 +34,9 @@ echo "===================================================="
 echo "Copy extension plugin"
 echo "===================================================="
 mkdir dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
-cp -R * dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+cp *.xsl dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+cp params.xml dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer/params.xml
+cp plugin.xml dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer/plugin.xml
 
 echo "===================================================="
 echo "List DITA-OT plugins"
