@@ -6,9 +6,7 @@ In this sample, the footer of the WebHelp Responsive output is modified by addin
 
 ![Custom footer](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/resources/doc/img/WH-XSLT-customization.png)
 
-This project uses Travis CI for continuous integration, so a WebHelp Responsive instance is generated whenever the customization is modified. You can view the results of this customization by opening the next link [WebHelp Responsive custom footer ](https://oxygenxml.github.io/com.oxygenxml.webhelp.responsive.custom.footer/it-book/index.html).
-
-You can read more details about this customization in the [GitHub WIKI pages](https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki).
+This project uses Travis CI for continuous integration, so a WebHelp Responsive instance is generated whenever the customization is modified. You can view the results of this customization by opening the next link [WebHelp Responsive custom footer ](https://oxygenxml.github.io/com.oxygenxml.webhelp.responsive.custom.footer/it-book/index.html). You can read more details about this customization in the [GitHub WIKI pages](https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki).
 
 To use this WebHelp Responsive customization plugin, use one of the following methods:
 
@@ -23,9 +21,9 @@ To use this WebHelp Responsive customization plugin, use one of the following me
 4. Invoke the WebHelp Responsive transformation as in the following example:
 TODO: Review the command
 ```
-    dita.bat -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -f oxy-ug-pdf -output=D:/workspace/userguide-private/DITA/out-pdf --filter=D:/workspace/userguide-private/DITA/author.ditaval -Doxy-ug-distribution=author
+sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book -v -Dwebhelp.footer.add.generation.time=yes
 ```
 
-This customization sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.2.
+This customization sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.3.
 
 This project is licensed under the Apache License 2.0. For details, see the [LICENSE](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/LICENSE) file at the top of this repository.
