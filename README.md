@@ -6,6 +6,12 @@ In this sample, the footer of the WebHelp Responsive output is modified by addin
 
 ![Custom footer](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/resources/doc/img/WH-XSLT-customization.png)
 
+This project uses Travis CI for continuous integration, so a WebHelp Responsive instance is generated whenever the customization is modified. You can view the results of this customization by opening the next link [WebHelp Responsive custom footer ](https://oxygenxml.github.io/com.oxygenxml.webhelp.responsive.custom.footer/it-book/index.html).
+
+You can read more details about this customization in the [GitHub WIKI pages](https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki).
+
+Please note that this customization was tested using [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) plugin, version 19.1, and [DITA-OT](http://www.dita-ot.org/) 2.5.2.
+
 To use this WebHelp Responsive customization plugin, use one of the following methods:
 
 * **From the Oxygen interface** - Follow these steps:
