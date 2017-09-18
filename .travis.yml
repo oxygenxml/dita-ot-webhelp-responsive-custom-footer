@@ -7,7 +7,7 @@ script:
 after_success:
 - sh .travis/deploy.sh
 before_install:
-  - openssl aes-256-cbc -k "$super_secret_password" -in doc/licensekey.txt.enc -out doc/licensekey.txt -d
+  - openssl aes-256-cbc -k "$super_secret_password" -in resources/doc/licensekey.txt.enc -out resources/doc/licensekey.txt -d
 env:
   global:
   - secure: SCnBXYCC/ouKIQ1MCoJ+rhlvbXrfP00gsi4zbpouyp0xGFwp1TZXLsV9D31ecSkqipaUtRn4NfDceGUK5AXlscxQmw3NOKX5aFqk/zGc5W9uj3JfpTodvUzy7r+e6OvhboqFKLo+pb2sZQCtergj7H7KxLYV7xZERimrJfqr9mKLd8dg1d7gEwhuHaoZgatUQwGj3rwagwNBOY2zIKqO8vQppCk8CIDIF/LuvIFtuOi83PWX6DzY4+y4y8JIIdlXqoE0KvbowBvOF6gqBHPpLEBT/tH6Hm9LYD2nM+7ua5+gI1hlijy1r4rWmUQyYthE71W4xEbdvBiJy4GFKBtXd5nd9OEKcviUAL3M87VxbbrGHZmbLpHL5CCLvsyZBbHc3/24TmjjRkXmzM7tzo/nRQYkBn00m/plWt3g73wl5Ulp0cSeK3vkYqSfbmD5XK3CRr/tUCoVbiJUdcPc5LjP1Y6sefxS16fXAKH5wNKbVqoO7wONgaxv+1zwjyBhO96h1WEVIys31xEBnYVW777GmH3XcdEJi0G4pRdU8TKYqPnYlesaOfWZYq27I8f9q5lL5jL9jSiQ3hIb5OhcJPHpWeEtVPgi9m7QX8z9RjQDd37LpVVJi3OnroxjWmhj0JJGzL9h6RNsTRH8VdoPd3UC2XXaYtEMWjmFVKogX9uDKHc=

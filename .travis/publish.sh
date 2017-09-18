@@ -21,7 +21,7 @@ mkdir webhelp-plugin
 chdir webhelp-plugin
 wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
 unzip oxygen-webhelp.zip >/dev/null
-cp ../doc/licensekey.txt com.oxygenxml.webhelp
+cp ../resources/doc/licensekey.txt com.oxygenxml.webhelp
 ls -la com.oxygenxml.webhelp
 cp -R com.oxygenxml.* ../dita-ot-2.5.3/plugins
 
