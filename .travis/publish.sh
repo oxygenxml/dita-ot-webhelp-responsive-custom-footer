@@ -29,10 +29,16 @@ cp ../resources/doc/licensekey.txt com.oxygenxml.webhelp.responsive
 ls -la com.oxygenxml.webhelp.responsive
 cp -R com.oxygenxml.* ../dita-ot-2.5.3/plugins
 
+chdir ..
+echo "===================================================="
+echo "Copy extension plugin"
+echo "===================================================="
+mkdir dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+cp * dita-ot-2.5.3/plugins/com.oxygenxml.webhelp.responsive.custom.footer
+
 echo "===================================================="
 echo "List DITA-OT plugins"
 echo "===================================================="
-chdir ..
 ls -la dita-ot-2.5.3/plugins/
 
 echo "====================================="
