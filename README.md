@@ -10,8 +10,6 @@ This project uses Travis CI for continuous integration, so a WebHelp Responsive 
 
 You can read more details about this customization in the [GitHub WIKI pages](https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki).
 
-Please note that this customization was tested using [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) plugin, version 19.1, and [DITA-OT](http://www.dita-ot.org/) 2.5.2.
-
 To use this WebHelp Responsive customization plugin, use one of the following methods:
 
 * **From the Oxygen interface** - Follow these steps:
@@ -28,6 +26,6 @@ TODO: Review the command
     dita.bat -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -f oxy-ug-pdf -output=D:/workspace/userguide-private/DITA/out-pdf --filter=D:/workspace/userguide-private/DITA/author.ditaval -Doxy-ug-distribution=author
 ```
 
-This sample is compatible with WebHelp Responsive 19.1. It was tested with DITA-OT 2.5.2.
+This sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.2.
 
 This project is licensed under the Apache License 2.0. For details, see the [LICENSE](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/LICENSE) file at the top of this repository.
