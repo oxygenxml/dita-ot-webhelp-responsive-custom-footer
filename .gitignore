@@ -1,0 +1,6 @@
+
+gh-pages/jekyll/_site/
+
+gh-pages/jekyll/\.jekyll-metadata
+
+gh-pages/jekyll/Gemfile\.lock
