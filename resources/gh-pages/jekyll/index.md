@@ -4,7 +4,7 @@ Sample WebHelp Responsive Customization plugin that shows how you can transfer m
 
 In this sample, the footer of the WebHelp Responsive output is modified by adding copyright information extracted from the DITA bookmap or by adding the output generation time.
 
-![Custom footer](doc/img/WH-XSLT-customization.png)
+![Custom footer](img/WH-XSLT-customization.png)
 
 This project uses Travis CI for continuous integration, so a WebHelp Responsive instance is generated whenever the customization is modified. You can view the results of this customization by opening the following link: [WebHelp Responsive custom footer ](https://oxygenxml.github.io/com.oxygenxml.webhelp.responsive.custom.footer/it-book/index.html). You can read more details about this customization in the [GitHub WIKI pages](https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki/WebHelp-Responsive-customization-plugin-to-change-footer-section).
 
