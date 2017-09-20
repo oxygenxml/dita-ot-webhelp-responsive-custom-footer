@@ -56,7 +56,11 @@ echo "====================================="
 export ANT_OPTS=-Xmx1524m
 sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book -v -Dwebhelp.footer.add.generation.time=yes
 
-cp resources/gh-pages/index.html publishing/index.html
+echo "====================================="
+echo "Copy Jekyll files"
+echo "====================================="
+cp gh-pages/jekyll/* publishing
+
 echo "====================================="
 echo "List output file"
 echo "====================================="
