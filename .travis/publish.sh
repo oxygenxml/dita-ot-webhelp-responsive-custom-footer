@@ -59,7 +59,7 @@ sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhel
 echo "====================================="
 echo "Copy Jekyll files"
 echo "====================================="
-cp -R gh-pages/jekyll/* publishing
+cp -R resources/gh-pages/jekyll/* publishing
 
 echo "====================================="
 echo "List output file"
