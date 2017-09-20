@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=f381c7298410537f52e7203f5a14494824761803">
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>WebHelp Responsive Custom Footer plugin | WebHelp Responsive customization plugin to add copyright information and generation time in the WebHelp Responsive footer.</title>
+<meta property="og:title" content="WebHelp Responsive Custom Footer plugin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="WebHelp Responsive customization plugin to add copyright information and generation time in the WebHelp Responsive footer." />
+<meta property="og:description" content="WebHelp Responsive customization plugin to add copyright information and generation time in the WebHelp Responsive footer." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="WebHelp Responsive Custom Footer plugin" />
+<script type="application/ld+json">
+{"name":"WebHelp Responsive Custom Footer plugin","description":"WebHelp Responsive customization plugin to add copyright information and generation time in the WebHelp Responsive footer.","author":null,"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"WebHelp Responsive Custom Footer plugin","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>WebHelp Responsive Custom Footer plugin</h1>
+          <h2>WebHelp Responsive customization plugin to add copyright information and generation time in the WebHelp Responsive footer.</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+          
+	  
+          <a href="http://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer" id="view-on-github" class="button"><span>View on GitHub</span></a>
+	  
+        </section>
+        <hr>
+        <section id="main_content">
+          <h2 id="webhelp-responsive-custom-footer-plugin">WebHelp Responsive Custom Footer plugin</h2>
+
+<p>Sample WebHelp Responsive Customization plugin that shows how you can transfer meta information specified in the DITA map to the WebHelp Responsive footer.</p>
+
+<p>In this sample, the footer of the WebHelp Responsive output is modified by adding copyright information extracted from the DITA bookmap or by adding the output generation time.</p>
+
+<p><img src="https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/resources/doc/img/WH-XSLT-customization.png" alt="Custom footer" /></p>
+
+<p>This project uses Travis CI for continuous integration, so a WebHelp Responsive instance is generated whenever the customization is modified. You can view the results of this customization by opening the following link: <a href="https://oxygenxml.github.io/com.oxygenxml.webhelp.responsive.custom.footer/it-book/index.html">WebHelp Responsive custom footer </a>. You can read more details about this customization in the <a href="https://github.com/oxygenxml/com.oxygenxml.webhelp.responsive.custom.footer/wiki/WebHelp-Responsive-customization-plugin-to-change-footer-section">GitHub WIKI pages</a>.</p>
+
+<p>To use this WebHelp Responsive customization plugin, use one of the following methods:</p>
+
+<ul>
+  <li><strong>From the Oxygen interface</strong> - Follow these steps:
+    <ol>
+      <li>Download the ZIP archive associated with this project by using the <code class="highlighter-rouge">Clone or download</code> button.</li>
+      <li>To install the plugin and transform it, follow the procedure found here: https://www.oxygenxml.com/doc/ug-editor/topics/dita-ot-install-plugin.html</li>
+    </ol>
+  </li>
+  <li><strong>From a command line</strong> - Follow these steps:
+    <ol>
+      <li>Download <strong>DITA-OT 2.5</strong>.</li>
+      <li>Download the ZIP archive associated with this project by using the <code class="highlighter-rouge">Clone or download</code> button.</li>
+      <li>Install the plugin by running the command <code class="highlighter-rouge">dita-ot-dir/bin/dita --install=plug-in-zip</code>. See more details in the <a href="http://www.dita-ot.org/2.5/dev_ref/plugins-installing.html">Installing plug-ins</a> topic from the DITA-OT documentation.</li>
+      <li>Invoke the WebHelp Responsive transformation as in the following example:</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhelp-responsive -output=publishing/it-book -v -Dwebhelp.footer.add.generation.time=yes
+</code></pre>
+</div>
+
+<p>This customization sample is compatible with <a href="https://www.oxygenxml.com/xml_webhelp.html">WebHelp Responsive</a> 19.1. It was tested with <a href="http://www.dita-ot.org/">DITA-OT</a> 2.5.3.</p>
+
+<p>This project is licensed under the Apache License 2.0. For details, see the <a href="https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/LICENSE">LICENSE</a> file at the top of this repository.</p>
+
+        </section>
+
+        <footer>
+        
+          WebHelp Responsive Custom Footer plugin is maintained by <a href="http://github.com/oxygenxml">oxygenxml</a><br>
+        
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>
