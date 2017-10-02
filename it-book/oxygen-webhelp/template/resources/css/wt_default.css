@@ -1,5 +1,5 @@
-@import "fonts.css?buildId=2017091813";
-@import "wt_index.css?buildId=2017091813";
+@import "fonts.css?buildId=2017092911";
+@import "wt_index.css?buildId=2017092911";
 
 /*
  * Styles for printing
@@ -308,7 +308,7 @@ caption{
     display:none;
 }
 @media only screen and (max-width: 767px) {
-   .wh_welcome {
+   .wh_welcome:not(:empty), .wh_welcome:empty {
        display: none;
    }
 }
@@ -882,6 +882,12 @@ input
     background-color: #ddefff;
 }
 
+/* WH-1485: A wide table overflows the topic content area in the Responsive output. */
+.tablenoborder,
+.simpletable-container {
+    overflow-x: auto;
+}
+
 /*
  * ------------------------------------------------------------------
  *
@@ -1182,6 +1188,11 @@ ui-menu-item > .ui-state-active{
     opacity: 0.5;
     font-size: 15px;
     border-radius:0 7px 0 0px;
+}
+
+code{
+    background-color: #e7e7e7;
+    color: #222222;
 }
 
 .copyTooltip::before{

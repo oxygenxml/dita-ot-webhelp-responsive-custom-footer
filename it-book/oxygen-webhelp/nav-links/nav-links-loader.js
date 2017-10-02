@@ -16,7 +16,7 @@ define(function (require) {
         leaf : "leaf"
     };
 
-    var jsonBaseDir = "toc-src";
+    var jsonBaseDir = "json";
 
     /**
      * The path of the output directory, relative to the current HTML file.
@@ -252,18 +252,22 @@ define(function (require) {
                 class: "wh-tooltip",
                 html: topic.shortdesc
             });
+			
+			/* WH-1518: Check if the tooltip has content. */
+            if (tooltipSpan.find('.shortdesc:empty').length == 0) {
 
-            // Update the relative links
-            var pathToRoot = getPathToRoot();
-            var links = tooltipSpan.find("a[href]");
-            links.each(function () {
-                var href = $(this).attr("href");
-                if (!(href.startsWith("http:") || href.startsWith("https:"))) {
-                    $(this).attr("href", pathToRoot + href);
-                }
-            });
+                // Update the relative links
+                var pathToRoot = getPathToRoot();
+                var links = tooltipSpan.find("a[href]");
+                links.each(function () {
+                    var href = $(this).attr("href");
+                    if (!(href.startsWith("http:") || href.startsWith("https:"))) {
+                        $(this).attr("href", pathToRoot + href);
+                    }
+                });
 
-            titleSpan.append(tooltipSpan);
+                titleSpan.append(tooltipSpan);
+            }
 
         }
 

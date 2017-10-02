@@ -325,12 +325,14 @@ Example:
 }
 
 /* Side TOC tooltip */
+.wh_breadcrumb .topicref .wh-tooltip,
 .wh_side_toc .topicref .wh-tooltip {
     background-color: #5185cb;
     color: #fff;
     font-size: 1.4rem;
 }
 
+.wh_breadcrumb .topicref .wh-tooltip a,
 .wh_side_toc .topicref .wh-tooltip a {
     color: #fff;
     text-decoration: underline;

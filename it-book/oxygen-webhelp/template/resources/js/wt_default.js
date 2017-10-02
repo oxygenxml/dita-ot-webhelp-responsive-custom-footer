@@ -62,7 +62,22 @@ $(document).ready(function () {
                 topicContentParent.removeClass(' col-lg-8 col-md-8 col-sm-8 col-xs-12 ');
                 topicContentParent.addClass(' col-lg-12 col-md-12 col-sm-12 col-xs-12 ');
             }
+        } else {
+            /* WH-1518: Check if the tooltip has content. */
+            var emptyShortDesc = sideToc.find('.topicref .wh-tooltip .shortdesc:empty');
+            if (emptyShortDesc.length > 0) {
+                var tooltip = emptyShortDesc.closest('.wh-tooltip');
+                tooltip.remove();
+            }
         }
+    }
+
+    // WH-1518: Hide the Breadcrumb tooltip if it is empty.
+    var breadcrumb = $('.wh_breadcrumb');
+    var breadcrumbShortDesc = breadcrumb.find('.topicref .wh-tooltip .shortdesc:empty');
+    if (breadcrumbShortDesc.length > 0) {
+        var tooltip = breadcrumbShortDesc.closest('.wh-tooltip');
+        tooltip.remove();
     }
 
     $(".wh_main_page_toc .wh_main_page_toc_accordion_header").click(function(event) {

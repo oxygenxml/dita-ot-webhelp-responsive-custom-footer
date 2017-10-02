@@ -288,6 +288,8 @@ Copyright (c) 1998-2017 Syncro Soft SRL, Romania.  All rights reserved.
     	display:inline;
         content:'[' attr(hr_id) ']';
     }
+    
+    
     /*
      * This marks the end of the range. 
      */
@@ -463,15 +465,17 @@ oxy-insert   	 oxy-comment,
     .oxy-insert[hr_id]:before{
 		content:none;
     }
-    
+
+    /*
     oxy-range-start:before,
     .oxy-range-start:before {
-        content:none;
+        content:none;        
     }
     oxy-range-end:before,
     .oxy-range-end:before {
         content:none;
     }
+    */
     
     oxy-attributes,
     oxy-attributes:footnote-call,
