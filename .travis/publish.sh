@@ -22,8 +22,7 @@ echo "Download WebHelp plugin"
 echo "===================================================="
 mkdir webhelp-plugin
 chdir webhelp-plugin
-# wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
-cp ../resources/webhelp/oxygen-webhelp.zip oxygen-webhelp.zip
+wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/DITA-OT-2.x/oxygen-webhelp.zip
 unzip oxygen-webhelp.zip >/dev/null
 cp ../resources/doc/licensekey.txt com.oxygenxml.webhelp.responsive
 ls -la com.oxygenxml.webhelp.responsive
