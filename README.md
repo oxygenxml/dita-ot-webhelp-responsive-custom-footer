@@ -26,4 +26,8 @@ sh dita-ot-2.5.3/bin/dita -i resources/sample/it-book/taskbook.ditamap -f webhel
 
 This customization sample is compatible with [WebHelp Responsive](https://www.oxygenxml.com/xml_webhelp.html) 19.1. It was tested with [DITA-OT](http://www.dita-ot.org/) 2.5.3.
 
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
 This project is licensed under the Apache License 2.0. For details, see the [LICENSE](https://github.com/radu-pisoi/com.oxygenxml.webhelp.responsive.custom.footer/blob/master/LICENSE) file at the top of this repository.
